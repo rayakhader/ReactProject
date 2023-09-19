@@ -1,13 +1,123 @@
+html{
+  height: 100%;
+}
 body {
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.main{
+  display: flex;
+  height: 100%;
+} 
+#root{
+  height: 100%;
+}
+/* sidebar style*/
+.side-bar{
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 200px;
+  color: white;
+  height: 100%;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+}
+.links a{
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.links a:hover{
+  background-color: #51c8e2 ;
+}
+.head{
+  height: 80px;
+  background-color:  #51c8e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num {
+  margin-left: auto;}
+/* list style*/
+.list{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  overflow-y: auto;
+}
+.list div {
+  border: 1px solid rgba(0, 0, 0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+.list p{
+  margin-left:10px;
+}
+.list div p:last-child {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+.list .active {
+  color:  #51c8e2;
+}
+.list .active p:last-child {
+  color: #51c8e2;
+}
+.date
+{
+  float: right;
+}
+.point {
+  color:  #51c8e2;
+  float: right;
+  font-size: 60px;
+}
+.list a {
+  text-decoration: none;
+  color: black;
+}
+.content{
+  height: 100%;
+  min-width: 750px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.content nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  height:100px;
+}
+.content nav p:last-child{
+  color: rgba(0, 0, 0, 0.3);
+}
+.content nav p {
+  margin: 10px;
+}
+.content>p {
+  margin-left: 10px;
+}
+.content .icon {
+  float: right;
+  cursor: pointer;
+}
+.playingwithreact .date {
+  float: right;
 }
